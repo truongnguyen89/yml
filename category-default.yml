@@ -12,24 +12,8 @@ management:
     datasource:
         url: "jdbc:mysql://localhost:3306/football?characterEncoding=UTF-8"
         username: root
-        password: 
+        password:
         driver-class-name: com.mysql.jdbc.Driver
-        idleMaxAgeInMinutes: 60
-        idleConnectionTestPeriodInMinutes: 240
-        maxConnectionsPerPartition: 10
-        minConnectionsPerPartition: 2
-        partitionCount: 1
-        acquireIncrement: 1
-        statementsCacheSize: 50
-        resetConnectionOnClose : true
-        acquireRetryDelayInMs : 1000
-       
-    jpa:
-        show-sql: false
-        properties:
-            hibernate:
-                dialect: "org.hibernate.dialect.Oracle10gDialect"
-                format_sql: true
 feign:
   client:
     config:
