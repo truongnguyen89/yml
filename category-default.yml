@@ -10,10 +10,10 @@ management:
     security:
         enabled: false
     datasource:
-        url: "jdbc:oracle:thin:@192.168.130.29:1521:estore"
-        username: estore
-        password: estore
-        driver-class-name: oracle.jdbc.OracleDriver
+        url: "jdbc:mysql://localhost:3306/football?characterEncoding=UTF-8"
+        username: root
+        password: 
+        driver-class-name: com.mysql.jdbc.Driver
         idleMaxAgeInMinutes: 60
         idleConnectionTestPeriodInMinutes: 240
         maxConnectionsPerPartition: 10
